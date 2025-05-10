@@ -21,14 +21,17 @@ HTML = """
     body { background-color: #f8f9fa; padding-top: 40px; }
     .container { max-width: 600px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
     h2 { color: #0d6efd; font-weight: 600; }
-    .logo { width: 120px; margin-bottom: 15px; }
+    .logo { width: 150px; margin-bottom: 15px; }
+    .note { font-size: 0.95rem; color: #555; margin-bottom: 20px; }
+    .footer { font-size: 0.85rem; color: #666; margin-top: 20px; line-height: 1.4; }
   </style>
 </head>
 <body>
   <div class="container text-center">
-    <img src="https://bbsewa.in/wp-content/uploads/2024/04/bbtech-logo.png" class="logo" alt="BBTECH Logo">
+    <img src="https://bbsewa.com/wp-content/uploads/2025/05/bbtechlogo.jpeg" class="logo" alt="BBTECH Logo">
     <h2>BBTECH PAN Merge Tool</h2>
     <p class="text-muted">Upload Acknowledgement + PAN Form PDFs below</p>
+    <div class="note">⚠️ <strong>Note:</strong> The final merged PDF will be automatically named using the 15-digit Acknowledgement Number.</div>
     <form method="post" enctype="multipart/form-data">
       <div class="mb-3 text-start">
         <label class="form-label">PDF 1 (Acknowledgement Slip)</label>
@@ -49,6 +52,11 @@ HTML = """
         </div>
       {% endif %}
     {% endwith %}
+    <div class="footer mt-4">
+      👨‍💼 <strong>Developed by BB TECHNOLOGIES AND SERVICES</strong><br>
+      PAN card agency provider<br>
+      📞 Contact us: 63827 78910
+    </div>
   </div>
 </body>
 </html>
